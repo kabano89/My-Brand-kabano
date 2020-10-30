@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/login.css">
+  <title>Login Page</title>
+</head>
+<body>
+    
+    <div class="container">
+                
+          <div id="form-comment">
+
+            <p id="message"></p>
+
+              <div id="login_div" action="">
+                <h3>Log In</h3>
+
+                <p>
+                  <input type="email" placeholder="Email...." name="" id="email_field" />
+                </p>
+
+                <p>
+                  <input type="password" placeholder="Password..." id="password_field"/>
+                </p>
+                              
+                <p>
+                  <button onclick="login()" id="login">Login</button>
+                </p>
+          
+              </div>
+          </div>
+          
+    </div>
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAzB0xFc3J_JexCDPT4IhvIE7mk1mTSNCI",
+          authDomain: "blog-6e704.firebaseapp.com",
+          databaseURL: "https://blog-6e704.firebaseio.com",
+          projectId: "blog-6e704",
+          storageBucket: "blog-6e704.appspot.com",
+          messagingSenderId: "291237750331",
+          appId: "1:291237750331:web:a9854a771694c964d79e1e",
+          measurementId: "G-NT5XTB43ZB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //firebase.analytics();
+    </script>
+    <script src="../js/login.js"></script>
+    
+</body>
+</html>
